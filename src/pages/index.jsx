@@ -1,0 +1,10 @@
+export { default as Login } from "./login";
+export { default as Home } from "./home";
+export { default as NoMatchPage } from "./noMatchPage";
+export { default as Costumer } from "./Costumer";
+export { default as Providers } from "./Providers";
+export { default as Administration } from "./Administration";
+export { default as Materials } from "./Materials";
+export { default as Roles } from "./Roles";
+export { default as Services } from "./Services";
+export { default as Recipients } from "./Recipients";

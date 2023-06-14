@@ -1,0 +1,12 @@
+export { DatosGenerales } from "./DatosGenerales";
+export { DatosBasicos } from "./DatosBasicos";
+export { NivelesOrganizacion } from "./NivelesOrganizacion";
+export { OilGas } from "./OilGas";
+export { GestionCompras } from "./GestionCompras";
+export { PlanificacionNecesidad } from "./PlanificacionNecesidad";
+export { DatAlmacenamiento } from "./DatAlmacenamiento";
+export { Contabilidad } from "./Contabilidad";
+export { Costos } from "./Costos";
+export { InformacionAdicional } from "./InformacionAdicional";
+export { Venta } from "./Venta";
+export { AreaVenta} from "./AreaVenta";

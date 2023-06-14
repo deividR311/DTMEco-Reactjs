@@ -1,0 +1,209 @@
+@import "../../../../../styles/base/settings";
+
+@mixin TitlesDetail {
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+}
+
+@mixin LabelTextField {
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.allContainerDetail {
+  width: 100%;
+  margin: 0 auto;
+
+  margin-bottom: 80px;
+  .TextFieldDetail {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .LabelTextField-header {
+      @include LabelTextField;
+
+      &::after {
+        content: ":";
+      }
+    }
+    .LabelTextField-section {
+      @include LabelTextField;
+
+      &::after {
+        content: "*";
+        color: #333333;
+        margin-left: 5px;
+      }
+    }
+    .inputTextField {
+      width: 100%;
+      min-height: 43px;
+      font-size: 14px;
+      color: #666666;
+      border-radius: 7px;
+      border: 1px solid #9f9d9d;
+      background-color: #fbfafc;
+      padding: 10px 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      word-break: break-all;
+    }
+
+    .textarea {
+      align-items: flex-start;
+      min-height: 90px;
+    }
+    .textarea-observation {
+      align-items: flex-start;
+      min-height: 120px;
+    }
+
+    .inputTextField-modified {
+      border: 2px solid #0f0c5a;
+    }
+
+    .footerTextField {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+
+      .modifiedData {
+        color: #0f0c5a;
+        font-size: 12px;
+      }
+      .characters {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .headerDetailContainer {
+    margin-bottom: 15px;
+    .header {
+      padding: 0 30px;
+      margin-bottom: 15px;
+      @include TitlesDetail;
+    }
+
+    &_item {
+      padding: 0 10px;
+      margin-bottom: 20px;
+
+      .buttonSeeHistory {
+        width: 197px;
+        height: 45px;
+        cursor: pointer;
+        color: #fbfafc;
+        margin-top: 21px;
+        border-radius: 7px;
+        background-color: $primary;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .check {
+        .MuiSvgIcon-root {
+          color: #666666;
+        }
+        color: #666666;
+        margin-left: -10px;
+      }
+    }
+  }
+
+  .sectionTwoDetail {
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 7px;
+    border: 1px solid #9f9d9d;
+
+    &_header {
+      width: 100%;
+      height: 70px;
+      border-bottom: 1px solid #9f9d9d;
+
+      display: flex;
+      padding: 0 30px;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        @include TitlesDetail;
+        margin-bottom: 0;
+      }
+      .RadioBtn {
+        display: flex;
+
+        .container {
+          width: auto;
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          cursor: pointer;
+
+          input {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+
+            &:checked ~ .checkmark {
+              border: 2px solid $primary;
+            }
+          }
+
+          .checkmark {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border: 2px solid $primary;
+            border-radius: 50%;
+          }
+
+          .text {
+            margin-left: 35px;
+          }
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .container input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .container .checkmark:after {
+          top: 2px;
+          left: 2px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: $primary;
+        }
+      }
+    }
+
+    &_bodyDetail {
+      padding: 20px;
+    }
+  }
+}

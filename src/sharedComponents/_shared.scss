@@ -1,0 +1,487 @@
+@import "../styles/base/settings";
+
+.header__style {
+  background-color: white;
+}
+
+.header__header {
+  z-index: 5;
+  width: 100%;
+  height: 53px;
+  margin-top: 20px;
+  position: relative;
+  background-color: #0e0c5a;
+}
+
+.header__menuPrincipal {
+  margin: 0;
+  height: 53px;
+}
+
+.header__menuPrincipal a {
+  color: #ffffff;
+}
+.header__menuPrincipal a:hover {
+  background-color: #2d3086;
+  border-radius: 7px;
+}
+
+.header__contenedorFotoUsuario {
+  height: 100%;
+  text-align: right;
+}
+
+.header__contenedorFotoUsuario img {
+  height: 53px;
+  border-radius: 50px;
+}
+
+.headerTable_service_and_material {
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+.header__nombreUsuarioHeaderPerfil {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+  line-height: 53px;
+  padding: 5px 5px;
+}
+
+.header__h6NameUser {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.header__tooltip {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.header__imgLogo {
+  width: 100px;
+  height: 45px;
+  margin-right: 0vh;
+  margin-left: 0vh;
+  margin-top: 5px;
+}
+
+.header__btn {
+  margin-top: 3px;
+}
+
+.header__subMenuCtn {
+  padding: 5px;
+  width: max-content;
+}
+
+.header__subMenuItem {
+  background-color: #0e0c5a;
+  border-radius: 7px;
+  &:hover {
+    background-color: #50539e;
+  }
+}
+
+.footer__position {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.table__header {
+  background-color: $primary;
+  color: white;
+}
+
+.table__ctnPaginator {
+  height: 100px;
+}
+
+.contenedor_foto_usuario {
+  height: 100%;
+  text-align: right;
+}
+
+.contenedor_foto_usuario img {
+  height: 53px;
+  border-radius: 50px;
+}
+
+.correo_usuario_header_perfil {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+}
+
+.eco_txt_content {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.sub_menu {
+  padding: 0px 0px;
+  height: 40px;
+  width: 100%;
+  background-color: #f1f2f2;
+}
+
+.eco_configuracion {
+  background: none;
+  padding-top: 5px;
+}
+
+.table__paginator {
+  background-color: #0e0c5a;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    background-color: #50539e;
+    color: white;
+  }
+}
+
+.eco_configuracion img {
+  float: right;
+}
+
+.navBreadCrumb {
+  display: flex;
+  font-size: 14px;
+  flex-flow: row nowrap;
+  .BreadCrumb {
+    padding: 0;
+    display: flex;
+    padding-left: 5px;
+    flex-flow: row nowrap;
+    &__item {
+      list-style: none;
+      .BreadCrumb__link {
+        color: $primary;
+        text-decoration: underline;
+        &:hover {
+          color: #50539e;
+          text-decoration: underline;
+        }
+        &--active {
+          color: $primary;
+          font-weight: 600;
+          text-decoration: none;
+          &:hover {
+            color: $primary;
+            text-decoration: underline;
+          }
+        }
+      }
+      &:not(:last-of-type)::after {
+        content: "/";
+        margin: 0 5px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.goBackButton {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  font-weight: bold !important;
+  text-transform: capitalize !important;
+}
+
+.containerButtons {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 100px;
+  justify-content: flex-end;
+
+  &__items {
+    margin-left: 20px;
+    .ButtonAccept {
+      width: 180px;
+      height: 50px;
+      background-color: $primary;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: none;
+
+      &:hover {
+        background-color: #50539e;
+      }
+
+      &:disabled {
+        background-color: #50539e;
+        color: white;
+      }
+    }
+
+    .ButtonCancel {
+      width: 120px;
+      height: 50px;
+      color: #0e0c5a !important;
+      font-weight: bold;
+      text-transform: none;
+      text-decoration: underline;
+
+      &:hover {
+        color: #50539e;
+      }
+    }
+
+    .ButtonPrevius {
+      width: 180px;
+      height: 50px;
+      color: #0e0c5a !important;
+      font-weight: bold;
+      border: 1px solid #0e0c5a;
+      text-transform: none;
+
+      &:hover {
+        color: #50539e;
+        border: 1px solid #50539e;
+      }
+    }
+  }
+}
+// Se modifica componentes poscarga
+.dropdown-menu {
+  top: 98%;
+  background-color: rgba(218, 34, 34, 0) !important;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+  border-radius: 0.2rem;
+}
+
+.navbar {
+  justify-content: end;
+  position: relative;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: max-content;
+}
+
+.navBarHeader {
+  margin-left: 6%;
+}
+
+.containterTableContact {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 76%;
+  margin: 0 20px;
+  padding: 15px;
+  background-color: #f1f2f2;
+  border-radius: 7px;
+
+  .headerTableContact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+.btnDeleteContact {
+  color: $primary;
+  cursor: pointer;
+}
+
+.btnAddContact {
+  align-self: flex-end;
+  margin-bottom: 10px !important;
+  width: 65px !important;
+  height: 45px !important;
+  background-color: $primary !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+  text-transform: none !important;
+
+  &:hover {
+    background-color: #50539e;
+  }
+
+  &:disabled {
+    background-color: #50539e;
+    color: white;
+  }
+}
+
+.containerTable {
+  padding: 8px;
+}
+.validateError {
+  border: 2px solid red;
+  border-radius: 7px;
+}
+
+.ErrorContact {
+  margin-left: 5px;
+  color: red;
+  font-size: 13px;
+}
+
+.WithoutContact {
+  text-align: center;
+}
+
+.containerAddContact {
+  width: 100%;
+  min-height: 200px;
+  padding: 0 0 0 40px;
+}
+
+.titles {
+  margin-left: 20px;
+  &__item {
+    margin-top: 5px;
+    font-weight: bold;
+    color: $primary;
+  }
+}
+
+.datos {
+  margin-left: 30px;
+  &__item {
+    margin-top: 5px;
+    text-transform: capitalize;
+  }
+}
+
+.containerDatosAnteriores {
+  overflow-y: scroll !important;
+  padding: 40px 30px 0 30px;
+  width: 100%;
+  background-color: #f1f2f2;
+  max-height: 400px !important;
+  margin-top: 0;
+}
+
+.containerCalculated {
+  h4 {
+    color: $primary;
+    margin-bottom: 15px;
+  }
+  .groupFields {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .calculatedField {
+      padding: 10px;
+      width: 33%;
+      &__title {
+        font-weight: bold;
+        color: $primary;
+      }
+      &__text {
+        width: 80%;
+        border-radius: 7px;
+        padding: 5px 15px 5px 15px;
+        border: 1px solid rgb(129, 98, 98);
+      }
+    }
+  }
+}
+
+.alingItems {
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.buttonHead {
+  background-color: transparent !important;
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+}
+.MuiDataGrid-columnHeaderWrapper {
+  background: #5052a3;
+  color: white;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiDataGrid-columnHeaderTitle {
+  overflow: initial !important;
+  font-weight: 500;
+  white-space: initial !important;
+  line-height: initial !important;
+  text-overflow: ellipsis !important;
+}
+.MuiDataGrid-cell {
+  white-space: pre-line !important;
+  line-height: initial !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.MuiIconButton-root {
+  color: #d0d0d1 !important;
+}
+
+.ButtonAccept {
+  width: 180px;
+  height: 50px;
+  background-color: $primary !important;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none !important;
+
+  &:hover {
+    background-color: #50539e;
+  }
+
+  &:disabled {
+    background-color: #50539e;
+    color: white;
+  }
+}
+
+.ButtonAcceptModal {
+  width: 22%;
+  height: 1%;
+  background-color: $primary !important;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none !important;
+
+  &:hover {
+    background-color: #50539e;
+  }
+
+  &:disabled {
+    background-color: #50539e;
+    color: white;
+  }
+}
+
+.ButtonCancelarModal {
+  width: 22%;
+  height: 1%;
+  color: #0e0c5a !important;
+  font-weight: bold;
+  border: 1px solid #0e0c5a !important;
+  text-transform: none !important;
+
+  &:hover {
+    color: #50539e;
+  }
+
+  &:disabled {
+    background-color: #50539e;
+    color: white;
+  }
+}

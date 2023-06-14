@@ -1,0 +1,104 @@
+.login__screen {
+  background: url("../../assets/images/taladroCluster.png") no-repeat;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
+  width: 100vw;
+}
+
+.login__header {
+  width: 100%;
+  background-color: #0e0c5a;
+}
+
+.login__logo {
+  width: 170px;
+  height: 50px;
+  margin-right: 0vh;
+  margin-left: 0vh;
+}
+
+.login__footerCopyrights {
+  background-color: #413e91;
+  color: white;
+  font-size: 13px;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+  width: 100vw;
+}
+
+.login__ecoFooter {
+  background-color: #413e91;
+  opacity: 1;
+}
+
+.login__imgfondo {
+  background-image: url("../../assets/images/taladroCluster.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.eco_p2 {
+  margin: 0 auto !important;
+}
+
+.login__box {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 5px;
+  text-align: left;
+  align-items: center;
+}
+
+.CTNlogin__titulo {
+  margin: 0 auto !important;
+}
+
+.login__titulo {
+  margin-top: 200px !important;
+  font-family: Ecopetrol;
+  margin: 10px auto 10px auto;
+  color: #0e0a84;
+  width: 32%;
+  display: flex;
+  text-align: center;
+}
+
+.login__ecoLabel {
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+.login__aConditionsPolitics {
+  color: blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.login__ctnErrors {
+  background-color: #fe4747;
+  color: white;
+  border-radius: 7px;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.login__ctnBtn {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.login__label {
+  font-weight: bold;
+}

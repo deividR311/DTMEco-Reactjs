@@ -1,0 +1,89 @@
+@import "../../../../../../../styles/base/settings";
+
+@mixin inputTextCode {
+  width: 100%;
+  height: 65px;
+  .MuiInputBase-formControl {
+    .MuiInputBase-input {
+      height: 2px !important;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      height: 45px;
+    }
+  }
+}
+
+@mixin labelModify {
+  font-size: 14px;
+  color: black;
+
+  &::after {
+    content: ":";
+  }
+}
+
+.containerHeaderDataGridModify {
+  padding: 0 25px;
+  height: 89px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 12px;
+
+  .field {
+    width: 25%;
+    height: 65px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+    .labelFieldModify {
+      margin-bottom: 5px;
+      @include labelModify;
+    }
+    .labelFieldModifyInput {
+      margin-bottom: 10px;
+      @include labelModify;
+    }
+
+    .inputText {
+      @include inputTextCode;
+    }
+
+    .input-group-custom {
+      display: flex;
+      height: 45px;
+
+      .input-group-text {
+        height: 45px;
+      }
+    }
+    .select-modify {
+      .css-1s2u09g-control {
+        height: 45px;
+      }
+
+      .css-1pahdxg-control {
+        height: 45px;
+      }
+    }
+  }
+
+  .buttonModify {
+    cursor: pointer;
+    background-color: $primary;
+    border-radius: 5px;
+    width: 205px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}

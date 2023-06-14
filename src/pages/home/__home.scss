@@ -1,0 +1,60 @@
+@import "../../styles/base/settings";
+
+.titleMods {
+  margin-top: 40px;
+}
+
+.containerCardsHome {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 60px;
+  .cardHome {
+    margin: 15px;
+    width: 20%;
+    padding: 20px;
+    height: 210px;
+    border-radius: 7px;
+    background-color: #f1f2f2;
+
+    h6 {
+      height: 30px;
+      color: $primary;
+      margin-bottom: 25px;
+    }
+
+    .subMod {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      ul {
+        padding-left: 8px;
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        li {
+          margin-bottom: 5px;
+          text-align: left;
+          a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #0500b0;
+            &:hover {
+              color: #333333;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1600px) {
+    width: 60%;
+  }
+}

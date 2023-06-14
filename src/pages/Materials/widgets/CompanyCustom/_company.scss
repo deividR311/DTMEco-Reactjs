@@ -1,0 +1,27 @@
+@import "../../../../styles/base/settings";
+
+.container_company {
+  padding: 20px 0;
+
+  .row_company {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+    border-bottom: 3px solid $primary;
+
+    .btnNextCompany {
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 10px 60px;
+      text-transform: none;
+      background-color: $primary;
+
+      &:hover {
+        background-color: #50539e;
+      }
+    }
+  }
+}

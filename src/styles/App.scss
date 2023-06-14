@@ -1,0 +1,8 @@
+@import './base/settings';
+@import './base/base';
+
+// Components
+@import '../pages/login/login';
+@import '../sharedComponents/shared';
+@import '../pages/Administration/administration';
+@import '../router/router';

@@ -1,0 +1,57 @@
+@import "../../../../../../styles/base/settings";
+
+@mixin textAlign {
+  width: 100px;
+  height: 44px;
+  display: flex;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $primary;
+  margin-left: 20px !important;
+  cursor: pointer;
+}
+
+.modalModifyContainer {
+  &_title {
+    font-size: 18px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+    .iconCloseModify {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  &_content {
+    height: auto;
+
+    padding: 15px 30px !important;
+
+    .GridContainer {
+      &_item {
+        padding: 0 15px;
+        margin-bottom: 25px;
+      }
+
+      .last {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &_buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 45px 25px 0 !important;
+
+    .ButtonCancelBorder {
+      @include textAlign;
+      color: $primary;
+    }
+    .ButtonAccept {
+      @include textAlign;
+    }
+  }
+}

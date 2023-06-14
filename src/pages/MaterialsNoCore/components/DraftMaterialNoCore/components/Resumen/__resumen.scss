@@ -1,0 +1,49 @@
+@import "../../../../../../styles/base/settings";
+
+.containerResumen {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+
+  h5 {
+    font-weight: bold;
+  }
+
+  .rowResumen {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    flex-flow: row wrap;
+
+    .colResumen {
+      width: 25%;
+      margin-bottom: 30px;
+      h6 {
+        &::after {
+          content: ":";
+        }
+      }
+      p {
+        font-weight: 600;
+      }
+    }
+
+    .colResumenTextArea {
+      width: 100%;
+      margin-bottom: 30px;
+      h6 {
+        &::after {
+          content: ":";
+        }
+      }
+      .text_Resumen {
+        width: 100%;
+        padding: 20px;
+        border-radius: 7px;
+        border: 1px solid #d8d8d8;
+        min-height: 120px;
+        text-align: left;
+      }
+    }
+  }
+}

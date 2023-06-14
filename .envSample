@@ -1,0 +1,4 @@
+REACT_APP_API_BASE_URL=https://dev-api.ecopetrol.com.co
+REACT_APP_OCP_APIM_SUBSCRIPTION_KEY= da15d49a69f64b65a0ffa7169dc77fb9
+REACT_APP_OCP_APIM_SUBSCRIPTION_APIS_KEY=c1855b3cded44f9cbea5451ac5e936fa
+REACT_APP_OFFICIAL_URL=https://as-aeu-ecp-dev-datosmaestros.azurewebsites.net

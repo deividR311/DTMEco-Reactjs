@@ -1,0 +1,133 @@
+@import "../../../../../styles/base/settings";
+
+.containerButtonModification {
+  display: flex;
+  align-items: center;
+
+  .inputMod {
+    width: 100%;
+  }
+
+  .buttonMod {
+    margin-left: 20px;
+  }
+  .errorInput {
+    margin-bottom: 23px;
+  }
+}
+
+.textEmail {
+  font-size: 16px;
+}
+
+.sectionLongDescriptionHelpers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 45px;
+
+  &__container {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #9f9d9d;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .container__item {
+      width: 100%;
+
+      &_text {
+        height: 45px;
+        display: flex;
+        font-size: 14px;
+        color: #666666;
+        padding-left: 30px;
+        align-items: center;
+        justify-content: flex-start;
+        text-transform: capitalize;
+
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.alertMod {
+  display: flex;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: flex-start;
+
+  .iconAlertMod {
+    padding: 5px 9px 10px 15px;
+  }
+
+  .textAlertMod {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.DangerMod {
+  background-color: #ffd8d8;
+
+  .textAlertMod {
+    color: #ff0000;
+  }
+}
+.WarningMod {
+  background-color: #ffefd8;
+
+  .textAlertMod {
+    color: #d68400;
+  }
+}
+
+.containerLongDescriptionCaract {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #eff4fd;
+  padding: 30px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_gridContainer {
+    width: 80%;
+    height: auto;
+
+    .item {
+      height: auto;
+      padding: 0 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.ButtonAcceptModification {
+  width: 180px;
+  height: 45px;
+  color: white !important;
+  text-transform: none !important;
+  background-color: $primary !important;
+}
+.disabledBtn {
+  color: white !important;
+  background-color: #a4a2a2 !important;
+}
+.checkboxModify {
+  .MuiSvgIcon-root {
+    color: #0e0c5a;
+  }
+}

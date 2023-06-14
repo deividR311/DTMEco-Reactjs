@@ -1,0 +1,107 @@
+@import "../../../../../../styles/base/settings";
+
+.ContainerDetailButtons {
+  z-index: 2;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: fixed;
+  bottom: 26px;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+  padding: 15px;
+  
+
+  .containerBtnTwo {
+    width: 80%;
+    max-width: 1280px;
+    min-width: 980px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+
+    .col-btn {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      .ContainerDetailButtons__items {
+        margin-left: 20px;
+    
+        .ButtonNextFooter {
+          width: 100px;
+          height: 45px;
+          background-color: $primary;
+          border-radius: 7px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          color: #ffffff;
+          text-transform: capitalize;
+         
+    
+          &:hover {
+            background-color: #323a89;
+          }
+        }
+        .ButtonSendFooter {
+          width: 150px;
+          height: 45px;
+          background-color: $primary;
+          border-radius: 7px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          color: #ffffff;
+          text-transform: capitalize;
+         
+    
+          &:hover {
+            background-color: #323a89;
+          }
+        }
+        
+    
+        .ButtonCancelFooter {
+          display: flex;
+          height: 45px;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          color: $primary;
+          text-decoration: underline;
+          text-transform: capitalize;
+         
+    
+          &:hover {
+            color: #323a89;
+          }
+        }
+        
+        .ButtonBackFooter {
+          cursor: pointer;
+          width: 100px;
+          height: 45px;
+          border: 1px solid $primary;
+          border-radius: 7px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          color: $primary;
+          text-transform: capitalize;
+          
+    
+          &:hover {
+            border: 1px solid #323a89;
+            color: #323a89;
+          }
+        }
+      }
+    }
+  }
+}
+
+

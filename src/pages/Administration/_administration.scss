@@ -1,0 +1,71 @@
+.admin__ctnTable {
+  margin-bottom: 90px;
+}
+
+.admin__createTitle {
+  color: #50539e;
+}
+
+.admin__ctnForm {
+  margin-bottom: 10px;
+}
+
+.admin__btnsFormCtn {
+  margin-top: 15px;
+}
+
+.eco_filtros{
+    margin-bottom: 10px;
+    align-items: flex-end;
+}
+
+.eco_titulo_tabla{
+    color: #0F0C5A;
+    font-weight: bold;
+}
+
+.eco_filter{
+    box-shadow: 3px 3px 6px  rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.eco_filter img{
+width: 24px;
+color:#0F0C5A;
+}
+
+.eco_label label{
+    color: #666666;
+    font-size: 14px;
+    font: weight 700;
+  }
+  
+  .eco_label input{
+    margin-bottom: 10px;
+  }
+
+.eco_label{
+    text-align: left;
+    padding: 0 15px;
+    margin: 10px auto;
+  }
+  
+  .eco_label_checkbox{
+    margin-top: 10px;
+  }
+  
+  .eco_label_checkbox label{
+    color: #707070;
+    font-size: 14px;
+  }
+  
+  .eco_label_checkbox input{
+    width: auto;
+    height: auto;
+  }
+  
+  .eco_label label{
+    margin-top: 0px;
+  }

@@ -1,0 +1,91 @@
+@import "../../styles/base/settings";
+
+.headerFormServices {
+  padding: 20px 60px;
+  margin: 45px 0;
+  position: relative;
+  border-radius: 7px;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+
+  .titleFormServices {
+    left: 8px;
+    top: -10px;
+    font-size: 16px;
+    color: $primary;
+    padding: 0 10px;
+    font-weight: 500;
+    position: absolute;
+    background-color: white;
+  }
+
+  .contentEncabezado {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    &__item {
+      width: auto;
+      margin: 10px 60px 0 0;
+
+      .titleItemContent {
+        color: $primary;
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+      .textContent {
+        width: auto;
+        min-width: 200px;
+        border: 1px solid grey;
+        border-radius: 7px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.containerTax {
+  width: 60%;
+  display: flex;
+  padding: 20px 24px;
+  min-height: 100px;
+  border-radius: 4px;
+  flex-flow: column nowrap;
+  background-color: #f3f3f3;
+
+  h5 {
+    width: 100%;
+    color: #50539e;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  .gridTax {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .colTax {
+      width: 100%;
+      display: flex;
+      margin-left: 15px;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+
+      h6 {
+        color: $primary;
+      }
+
+      .rowTax {
+        width: 270px;
+        display: flex;
+        padding: 10px 0;
+        justify-content: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@import "../../../../styles/base/settings";
+
+.manage-data-container {
+  .manage-data--header {
+    .containerHeader {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 7px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+
+      &__Buttons {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        .ButtonAccept {
+          width: 180px;
+          height: 50px;
+          background-color: $primary;
+          font-weight: bold;
+          color: #ffffff;
+          text-transform: none;
+          &:hover {
+            background-color: #50539e;
+          }
+        }
+      }
+      &__Filters {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .containerItems {
+          display: flex;
+          flex-flow: row nowrap;
+          &_item {
+            width: 22%;
+            display: flex;
+            padding: 10px 15px;
+            align-items: flex-start;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            .labelCampos {
+              font-size: 12px;
+            }
+          }
+          &_contenItem{
+            width: 300px;
+            display: block;
+            padding: 4px 15px;
+            align-items: flex-start;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+          }
+        }
+        .containerFieldSearch {
+          display: flex;
+          align-items: center;
+          padding: 25px 10px 10px 15px;
+          .iconSearch {
+            background: $primary;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .manage-data--table {
+    .noDataMaterial {
+      width: 100%;
+      display: flex;
+      color: $primary;
+      padding-bottom: 1rem;
+      justify-content: center;
+      border-bottom: 1px solid $primary;
+    }
+
+    .itemState {
+      width: 180px;
+      .stateStyled {
+        width: 170px;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 14px;
+      }
+    }
+
+    .rowTable {
+      vertical-align: middle;
+    }
+
+    .ContainerActions {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      .ItemActions__simple {
+        margin-right: 10px;
+        cursor: pointer;
+        color: #0e0c5a;
+      }
+      .lastItem {
+        margin-right: 0;
+      }
+      .disableItem {
+        margin-right: 10px;
+        color: rgb(209, 209, 209);
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.PaginatorCustom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.MuiDataGrid-row{
+  width: auto !important
+}
+
+.MuiDataGrid-footerContainer {
+  justify-content: center !important;
+}
+.MuiDataGrid-columnsContainer {
+  background: #5052A3 !important;
+}
+.Mui-selected{
+  color: #fff;
+  background-color: #0E0C5A;
+}
+
+
+.MuiDataGrid-iconSeparator{
+  color: #5052A3 !important;
+}
+
+.stylePagination{
+  .Mui-selected{
+    color: #fff;
+    background-color: #0E0C5A !important;
+  }
+}
